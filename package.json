@@ -1,0 +1,29 @@
+{
+  "name": "game-engin",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "docs": "jsdoc -c jsdoc.json",
+    "example:2d": "webpack serve --config examples/2D/platformer/webpack.config.js",
+    "example:3d": "webpack serve --config examples/3D/spaceshooter/webpack.config.js",
+    "examples": "webpack serve --config examples/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3"
+  }
+}
